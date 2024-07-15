@@ -9,8 +9,12 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 nav ul {
@@ -32,17 +36,32 @@ main {
     padding: 20px;
 }
 
+p {
+    font-size: 30px;
+}
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 5px 0;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
-img {
+footer p {
+    font-size: 15px;
+}
+
+.headshot {
     width: 50%;
     height: auto;
+}
+
+.resume {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
