@@ -3,42 +3,70 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "./App.css";
+import { OverlayScrollbars } from "overlayscrollbars";
+import "overlayscrollbars/overlayscrollbars.css";
+import { FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa"; // Import icons
 
 function App() {
-  // Check if the user has a preferred theme in local storage
   const storedTheme = localStorage.getItem("theme") || "dark";
   const [theme, setTheme] = useState(storedTheme);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [showHeader, setShowHeader] = useState(false);
 
-  // Toggle Theme
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
-
-  // Apply theme to body
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
   }, [theme]);
 
-  // Detect Scrolling & Toggle Scrollbar Visibility
   useEffect(() => {
+    // Initialize OverlayScrollbars without autoHide
+    const osInstance = OverlayScrollbars(document.body, {
+      className: "os-theme-dark",
+      scrollbars: {
+        autoHide: "never", // Prevent OverlayScrollbars from instantly hiding
+      },
+    });
+
+    // Scroll detection for fade-out effect & sticky header
+    let scrollTimer;
     const handleScroll = () => {
+      setIsScrolling(true);
       document.body.classList.add("scrolling");
 
-      // Remove the "scrolling" class after 1 second of inactivity
-      clearTimeout(window.scrollTimer);
-      window.scrollTimer = setTimeout(() => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        setIsScrolling(false);
         document.body.classList.remove("scrolling");
-      }, 1000);
+      }, 1000); // Delay before fade-out starts
+
+      // Show sticky header when scrolling past hero section
+      const heroHeight = document.getElementById("hero").offsetHeight;
+      setShowHeader(window.scrollY > heroHeight - 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      osInstance.destroy();
+    };
   }, []);
 
   return (
     <>
+      {/* Sticky Header */}
+      <header className={`sticky-header ${showHeader ? "visible" : ""}`}>
+        <h2>Brian Kim</h2>
+        <nav>
+          <ul>
+            <li onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}>About</li>
+            <li onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}>Projects</li>
+            <li onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Contact</li>
+            <li>
+              <a href="/Brian Kim Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       {/* Full-Screen Hero Navigation */}
       <section id="hero">
         <h1>Brian Kim</h1>
@@ -52,13 +80,18 @@ function App() {
             </li>
           </ul>
         </nav>
-        {/* Theme Toggle Button */}
-        <button className="theme-toggle" onClick={toggleTheme}>
+        {/* Social Media Icons */}
+        <div className="social-links">
+          <a href="https://instagram.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://facebook.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        </div>
+        <button className="theme-toggle" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
         </button>
       </section>
 
-      {/* Sections */}
       <About />
       <Projects />
       <Contact />
