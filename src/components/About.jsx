@@ -15,6 +15,17 @@ function About() {
         I play a variety of games, from MOBA to shooters, with the goal of achieving the rank-equivalent of at least Diamond in every competitive game I play.
         Currently, I have reached Master in TFT and Diamond in League of Legends and Valorant.
       </p>
+      <p>Some additional goals of mine are:
+        <br></br>
+        Learning to produce music
+        <br></br>
+        Improving my vocal skills
+        <br></br>
+        Improving my acoustic guitar skills
+        <br></br>
+        Seeing the Northern Lights in Iceland
+      </p>
+      <p>Below are some projects that I have been working on. Feel free to take a look at them!</p>
     </section>
   );
 }
