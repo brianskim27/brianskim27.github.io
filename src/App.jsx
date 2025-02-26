@@ -55,7 +55,8 @@ function App() {
     <>
       {/* Sticky Header */}
       <header className={`sticky-header ${showHeader ? "visible" : ""}`}>
-        <h2>Brian Kim</h2>
+      <h2 onClick={() => document.getElementById("hero").scrollIntoView({ behavior: "smooth" })} className="header-title">Brian Kim</h2>
+
         <nav>
           <ul>
             <li onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}>About</li>
