@@ -42,6 +42,8 @@ html, body {
 
 /* Theme Toggle Button */
 .theme-toggle {
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     padding: 12px 24px;
     font-size: 16px;
@@ -49,9 +51,14 @@ html, body {
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    background-color: var(--button-bg);
+    background-color: var(--primary-color);
     color: var(--text-color);
     transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.theme-toggle svg {
+    font-size: 14px;
+    margin-bottom: -1.5px;
 }
 
 /* Light Mode Button */
@@ -237,6 +244,29 @@ body:not(.scrolling) .os-scrollbar-handle {
 
 /* Hover Effect */
 .header-title:hover {
+    color: var(--accent-color);
+}
+
+/* Theme Toggle Icon Button */
+.theme-toggle-icon {
+    background: none;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: transform 0.3s ease-in-out, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+}
+
+.theme-toggle-icon svg {
+   font-size: 18px;
+}
+
+/* Hover Effect */
+.theme-toggle-icon:hover {
     color: var(--accent-color);
 }
 

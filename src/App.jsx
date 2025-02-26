@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 import "./App.css";
 import { OverlayScrollbars } from "overlayscrollbars";
 import "overlayscrollbars/overlayscrollbars.css";
-import { FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa"; // Import icons
+import { FaInstagram, FaFacebook, FaLinkedin, FaGithub, FaSun, FaMoon } from "react-icons/fa";
 
 function App() {
   const storedTheme = localStorage.getItem("theme") || "light";
@@ -56,7 +56,6 @@ function App() {
       {/* Sticky Header */}
       <header className={`sticky-header ${showHeader ? "visible" : ""}`}>
       <h2 onClick={() => document.getElementById("hero").scrollIntoView({ behavior: "smooth" })} className="header-title">Brian Kim</h2>
-
         <nav>
           <ul>
             <li onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}>About</li>
@@ -64,6 +63,11 @@ function App() {
             <li onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Contact</li>
             <li>
               <a href="/Brian Kim Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </li>
+            <li>
+              <button className="theme-toggle-icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                {theme === "dark" ? <FaSun /> : <FaMoon />}
+              </button>
             </li>
           </ul>
         </nav>
@@ -90,7 +94,7 @@ function App() {
           <a href="https://github.com/brianskim27" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         </div>
         <button className="theme-toggle" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-          {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {theme === "dark" ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>}
         </button>
       </section>
 
