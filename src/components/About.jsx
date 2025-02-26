@@ -26,6 +26,7 @@ function About() {
           <li>🎤 Improving my vocal skills</li>
           <li>🎸 Improving my acoustic guitar skills</li>
           <li>🌌 Seeing the Northern Lights in Iceland</li>
+          <li>⚽️ Watch a live soccer game in-person</li>
         </ul>
         <p>Below are some projects that I have been working on. Feel free to take a look at them!</p>
       </div>
