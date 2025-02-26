@@ -8,13 +8,14 @@ import "overlayscrollbars/overlayscrollbars.css";
 import { FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa"; // Import icons
 
 function App() {
-  const storedTheme = localStorage.getItem("theme") || "dark";
+  const storedTheme = localStorage.getItem("theme") || "light";
   const [theme, setTheme] = useState(storedTheme);
   const [isScrolling, setIsScrolling] = useState(false);
   const [showHeader, setShowHeader] = useState(false);
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   useEffect(() => {
@@ -38,9 +39,9 @@ function App() {
         document.body.classList.remove("scrolling");
       }, 1000); // Delay before fade-out starts
 
-      // Show sticky header when scrolling past hero section
+      // Adjust when the sticky header appears
       const heroHeight = document.getElementById("hero").offsetHeight;
-      setShowHeader(window.scrollY > heroHeight - 50);
+      setShowHeader(window.scrollY >= heroHeight * 0.8); // Show just before hero ends
     };
 
     window.addEventListener("scroll", handleScroll);
