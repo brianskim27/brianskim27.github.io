@@ -1,5 +1,6 @@
 import React from "react";
-import { FaReact, FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import "../Footer.css";
 
 function Footer() {
   return (

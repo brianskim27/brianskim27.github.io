@@ -1,0 +1,54 @@
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 5vh 10vw;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.about-text h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Left Side - Text */
+.about-text {
+    flex: 1;
+    max-width: 60%; /* Adjusted to make text take more space */
+    text-align: left;
+}
+
+/* Description Styling */
+.about-text p {
+    font-size: 1.05rem;
+}
+
+/* Right Side - Image */
+.about-image {
+    flex: 0.35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 3px solid transparent;
+    
+    /* Modern Glow Effect */
+    box-shadow: 0 0 12px rgba(0, 76, 157, 0.3); /* Light blue for modern glow */
+}
+
+/* Hover Effect */
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent-color); /* Stronger glow on hover */
+}
