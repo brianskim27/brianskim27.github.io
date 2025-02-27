@@ -4,7 +4,7 @@
     align-items: flex-start; /* Aligns text to the left */
     justify-content: center;
     height: 100vh; /* Full screen height */
-    padding: 5vh 10vw;
+    padding: 5vh 9vw;
     box-sizing: border-box;
 }
 

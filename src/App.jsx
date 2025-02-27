@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 import { OverlayScrollbars } from "overlayscrollbars";
 import "overlayscrollbars/overlayscrollbars.css";
-import { FaInstagram, FaFacebook, FaLinkedin, FaGithub, FaSun, FaMoon } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin, FaGithub, FaEnvelope, FaSun, FaMoon } from "react-icons/fa";
 
 function App() {
   const storedTheme = localStorage.getItem("theme") || "light";
@@ -93,6 +93,7 @@ function App() {
           <a href="https://www.facebook.com/brungim" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           <a href="https://www.linkedin.com/in/brianskim27/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://github.com/brianskim27" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+          <a href="mailto:brianskim27@gmail.com"><FaEnvelope /></a>
         </div>
         <button className="theme-toggle" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           {theme === "dark" ? <><FaSun /> Light Mode</> : <><FaMoon /> Dark Mode</>}

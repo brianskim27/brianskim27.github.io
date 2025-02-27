@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    padding: 5vh 10vw;
+    padding: 52vh 9vw;
     box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@
 
 /* Description Styling */
 .about-text p {
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 /* Right Side - Image */
