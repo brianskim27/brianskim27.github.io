@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./App.css";
 import { OverlayScrollbars } from "overlayscrollbars";
 import "overlayscrollbars/overlayscrollbars.css";
@@ -101,6 +102,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }

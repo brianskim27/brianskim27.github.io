@@ -1,9 +1,10 @@
 import React from "react";
+import { FaReact, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2025 Brian Kim | Designed with ❤️</p>
+      <p>2025 Brian Kim | Designed with ❤️ using <FaReact className="react-icon"/></p>
     </footer>
   );
 }

@@ -461,3 +461,28 @@ body:not(.scrolling) .os-scrollbar-handle {
     font-size: 0.75rem; /* Smaller font */
     gap: 5px;
 }
+                                                /* ///// FOOTER SECTION ///// */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.react-icon {
+    font-size: 1.2em; /* Adjust size */
+    margin-bottom: -3.5px;
+}
+
+.github-icon {
+    font-size: 1.2em; /* Adjust size */
+    margin-bottom: -3.5px;
+}
