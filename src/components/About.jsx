@@ -39,7 +39,7 @@ function About() {
         </p>
       </div>
       <div className="about-image">
-        <img src={"src/assets/professional head shot.JPG"} alt="Brian Kim" />
+        <img src={"/professional head shot.JPG"} alt="Brian Kim" />
       </div>
     </section>
   );
