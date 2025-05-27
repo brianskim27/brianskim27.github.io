@@ -9,7 +9,7 @@ function About() {
         <p>Hey there! I'm Brian, a '25 BSCS student at Binghamton University.</p>
         <p>
           Growing up, I've always enjoyed getting my hands on technology, and after initially testing the waters with the field of law, 
-          I decided to pursue the ever-growing computer world. Lately, I've also been gaining a lot of interest in data analysis, accruing a lot of experience
+          I decided to pursue the ever-growing computer world. Lately, I've also been gaining a lot of interest in data analysis, accruing vast experience
           in spreadsheets and numbers. I am always open to learning and growing more - the sky is the limit!
         </p>
         <p>
