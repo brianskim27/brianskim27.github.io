@@ -4,7 +4,7 @@ import "../Projects.css";
 const projects = [
   {
     name: "Splitsy",
-    description: "An iOS app that scans and splits receipts.",
+    description: "Full-scale iOS app that simplifies bill splitting.",
     repo: "brianskim27/Splitsy",
   },
   {
