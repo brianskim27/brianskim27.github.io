@@ -6,37 +6,34 @@ function About() {
     <section id="about" className="about-container">
       <div className="about-text">
         <h2>About Me</h2>
-        <p>Hey there! I'm Brian, a '25 BSCS student at Binghamton University.</p>
+        <p>Hey there! I'm Brian, a Binghamton University graduate with a B.S. in Computer Science (Class of '25).</p>
         <p>
-          Growing up, I've always enjoyed getting my hands on technology, and after initially testing the waters with the field of law, 
-          I decided to pursue the ever-growing computer world. Lately, I've also been gaining a lot of interest in data analysis, accruing vast experience
-          in spreadsheets and numbers. I am always open to learning and growing more - the sky is the limit!
+          Growing up, I've always loved working with technology. After briefly exploring the field of law, I decided to
+          fully pursue the ever-growing world of computer science. Recently, I released a passion project of mine - 
+          Splitsy, an iOS bill-splitting app designed to simplify group payments. It's available on Apple's TestFlight for beta testing and has
+          reduced manual bill-calculation time by 80% for users. As I continue to make improvements to the app, I've also been learning SQL to
+          expand my skill set and explore my growing interest in data analysis. Driven by curiosity and growth, I strive to make a positive
+          impact on the people around me, especially my loved ones.
         </p>
         <p>
-          As the youngest in the family, I always strive to work hard and be unique, aiming to pave my own path.
-          Ultimately, I want to be a difference to my environment and support the people around me, especially my loved ones.
+          Outside of work, I'm passionate about sports and the outdoors. Soccer is my first love (lifelong Tottenham
+          Hotspur fan, thrilled by their recent trophy win!), and I'm currently working on my basketball skills while aiming to become an all-rounder
+          across many sports. I also enjoy gaming, where competitively I've achieved high ranks in multiple titles (Master in TFT,
+          Diamond in League of Legends and Valorant). For me, gaming is a fun way to challenge myself, sharpen strategic thinking, and build adaptability
+          - with a personal goal of reaching at least Diamond in every competitive game I play. What I love about both sports and gaming is that, whether
+          I'm outside or at home, they give me a chance to have fun and connect with friends.
         </p>
         <p>
-          In my free time, I love to be outside and play sports, especially soccer. Most of the time, though, 
-          you will see me in despair because I am unfortunately a Tottenham Hotspur fan... I have a dream to learn as many sports as possible. 
-          Right now, I am enduring the difficulties in tennis haha.
-        </p>
-        <p>
-          I enjoy playing a variety of video games, though mostly with friends.
-          I have the goal of achieving the rank-equivalent of at least Diamond in every competitive game I play. 
-          Currently, I have reached Master in TFT and Diamond in League of Legends and Valorant.
-        </p>
-        <p>
-          I also love music. I listen to Korean, American, and Christian music and am always looking to expand my music taste.
-          Additionally, I enjoy playing instruments. I mainly play the drums and self-taught the bass guitar a year ago, but I also have experience in the acoustic guitar.
-          I used to play the clarinet (first chair) and saxophone in middle school, winning NYSSMA Gold with my band.
+          Music is another big part of my life. I mainly play the drums and bass guitar, but I've also picked up acoustic
+          guitar, and I previously played clarinet and saxophone — even winning a NYSSMA Gold medal with my band.
+          My playlists span Korean, American, and Christian music, and I'm always excited to discover new sounds and draw inspiration from them.
         </p>
         <h3>Some additional goals of mine:</h3>
         <p>
           🎵 Learn to produce music<br></br>
           🎤 Improve my vocal skills<br></br>
           🌌 See the Northern Lights (in Iceland)<br></br>
-          ⚽️ Watch a live soccer game in person<br></br>
+          🤖 Learn more about machine learning and AI applications<br></br>
         </p>
       </div>
       <div className="about-image">
