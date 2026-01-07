@@ -5,13 +5,14 @@ const projects = [
   {
     name: "Splitsy",
     description: "Full-scale iOS app that simplifies bill splitting.",
+    link: "https://github.com/brianskim27/splitsy",
     repo: "brianskim27/Splitsy",
   },
   {
-    name: "EM/KCF Website",
-    description: "Church website powered by Squarespace. \nUsed HTML, CSS, and Javascript.",
-    link: "https://www.binghamtonchurch.org/em-page-2",
-    repo: undefined,
+    name: "EPL Data Analytics",
+    description: "Data analysis project on the 2025-2026 EPL season.",
+    link: "https://github.com/brianskim27/epl_2025_2026_analysis",
+    repo: "brianskim27/epl_2025_2026_analysis",
   },
   {
     name: "Personal Website",

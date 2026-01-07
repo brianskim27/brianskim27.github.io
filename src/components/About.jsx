@@ -11,9 +11,8 @@ function About() {
           Growing up, I've always loved working with technology. After briefly exploring the field of law, I decided to
           fully pursue the ever-growing world of computer science. Recently, I released a passion project of mine - 
           Splitsy, an iOS bill-splitting app designed to simplify group payments. It's available on Apple's TestFlight for beta testing and has
-          reduced manual bill-calculation time by 80% for users. As I continue to make improvements to the app, I've also been learning SQL to
-          expand my skill set and explore my growing interest in data analysis. Driven by curiosity and growth, I strive to make a positive
-          impact on the people around me, especially my loved ones.
+          reduced manual bill-calculation time by 90% for users. As I continue to make improvements to the app, I've also expanded my skill set
+          in data analysis and have recently completed a full-scale data analysis project on the ongoing 2025-2026 English Premier League season.
         </p>
         <p>
           Outside of work, I'm passionate about sports and the outdoors. Soccer is my first love (lifelong Tottenham
