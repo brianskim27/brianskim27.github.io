@@ -83,7 +83,7 @@ function App() {
             <li onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}>Projects</li>
             <li onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>Contact</li>
             <li>
-              <a href="/Brian Kim Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a href="/BrianKim Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </li>
           </ul>
         </nav>
