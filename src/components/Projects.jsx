@@ -10,7 +10,7 @@ const projects = [
   },
   {
     name: "EPL Data Analytics",
-    description: "Data analysis project on the 2025-2026 EPL season.",
+    description: "Data analysis on the 2025-2026 EPL season using SQL, Python, and Power BI.",
     link: "https://github.com/brianskim27/epl_2025_2026_analysis",
     repo: "brianskim27/epl_2025_2026_analysis",
   },
